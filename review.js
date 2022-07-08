@@ -171,14 +171,30 @@ pizza = () => {
 // Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill. Return an array separating Yaz, Poornima, and Leshawn.
 const splitTheBill = "Yaz, Poornima, and Leshawn"
 
+split = () => { 
+  x = splitTheBill.toArray
+  for(i = 0; i <= x.length ; i++ ){ 
+    return x[i]
+  }
+}
+
 // OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces. Using splitTheBill, return an array separating all three by characters.
+
+//seperating all three and their characters?
 
 // Use this toLowerCase()
 const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS."
 // Tuan was angry today. Create a string with words that Tuan would yell out. Now lowercase it, to tell Tuan to chill out. 
+toLowerCase = () => { 
+  return angry.toLowerCase()
+}
 
 // toUpperCase()
 const jahlunSaidToPutSomeRespectToHisName = "jahlun"
+
+toUpperCase = () =>{ 
+  jahlunSaidToPutSomeRespectToHisName.toUpperCase()
+}
 
 // substring()
 // on the chopping block...
@@ -186,15 +202,27 @@ const jahlunSaidToPutSomeRespectToHisName = "jahlun"
 // Returns "ell"
 const basicGreeting = "Hello World"
 
+substring = () => { 
+  return basicGreeting .substring(1,4)
+}
 // Returns "JavaScript"
 const ohReally = "JavaScript Substring"
-
+substring2 = () => { 
+  return ohReally .substring(0,10)
+}
 // Returns aol.com
 const aslDays = "xXteoWuzHereXx@aol.com"
+substring2 = () => { 
+  return aslDays .substring(15,22)
+}
 
 // trim()
 // If only I can use this for my love handles...
 // Create a variable with a string value with some extra loving on both sides.
+
+let fat = "     loaded potatoe fries with cheese and chilly    "
+
+console.log (fat.trim())
 
 // =================================================
 //                     BOOLEAN
@@ -208,14 +236,15 @@ const a = 5;
 const b = 10;
 const c = 15;
 const d = "Keke"
+//not sure what ypu want?
 
-// console.log(a _ b)
-// console.log(c _ b)
-// console.log(d _ d)
-// console.log(d _ a)
-// console.log(a _ 15)
-// console.log(a _ b _ c)
-// console.log(c _ b _ a _ d)
+console.log(a + b)
+console.log(c + b)
+console.log(d + d)
+console.log(d + a)
+console.log(a + 15)
+console.log(a + b + c)
+console.log(c + b + a + d)
 
 // =================================================
 //                     LOOPS
@@ -223,9 +252,23 @@ const d = "Keke"
 
 // Ken has a headache today and he said the room has been spinning like crazy. Make Ken's room spin 10 times using FOR LOOP. Make him print a sentence.
 
+for (i = 0; i <= 10; i++){ 
+  console.log('You spin my head right round.')
+}
+
 // Harry said that was so mean of Teo to do Ken dirty like that. Make Teo's vision spin 20 times FOR LOOP.
 
+for (i = 0; i <= 20; i++){ 
+  console.log('This is Teos vision')
+}
+
 // But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
+
+while (i<=20){
+for (i = 0; i <= 20; i++){ 
+  console.log("I'm sorry")
+}
+}
 
 // For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :) 
 
@@ -235,16 +278,29 @@ const whateverQueenBeySaid = {
   thing2: 'clotes',
   thing3: 'gaming console'
 }
+console.log(whateverQueenBeySaid(thing1.thing2.thing))
 
 // Using (FOR IN LOOP), print the indexes of the array.
 const lana = ['l', 'a', 'n', 'a']
 
+for (i = 0; i <= lana.length; i++){ 
+  console.log(lana[i])
+}
+
 // USE (FOR OF LOOP)!
 const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
+
+//not sure, would you like to print what?
 
 // Look into forEach() loop, it accepts a callback aka a function inside a function. 
 // Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas. Inside the function, create a variable with the string "PS". Print their name in the console concatenated with the variable. 
 const perscholas = ['Amira', 'Arely', 'Jonathan']
+
+forEach =() => { 
+  for (i = 0; i <= perscholas.length; i++){ 
+  return 'PS ' + persholas[i]
+  }
+}
 
 // =================================================
 //                     ARRAYS
@@ -252,36 +308,76 @@ const perscholas = ['Amira', 'Arely', 'Jonathan']
 
 // Look up the following: Make a note of what each one of these methods do
 // push()
+//The push() method adds new items to the end of an array.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi", "Lemon")
 // pop()
+//The pop() method removes (pops) the last element of an array.
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop()
 // unshift()
+//The unshift() method adds new elements to the beginning of an array.
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon","Pineapple");
 // shift()
+//The shift() method removes the first item of an array.
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
 // concat()
+//The concat() method joins two or more strings.
+let text1 = "Hello";
+let text2 = "world!";
+let result = text1.concat(" ", text2);
+
 // splice()
+//The splice() method adds and/or removes array elements (need to learn more)
+
 // slice()
+//The slice() method returns selected elements in an array, as a new array. (need more understanding)
+
 // sort()
+//By default, the sort() function sorts values as strings. (TBR)
+
+
 // includes()
+//The includes() method returns true if a string contains a specified string.
+let text = "Hello World, welcome to the universe.";
+let sult = text.includes("world", 12);
+
 // indexOf()
+//The indexOf() method returns the position of the first occurrence of a value in a string.
+var txt = "Hello world, welcome to the universe.";
+text.indexOf("a");
+
 // length
+//returns the length of the array
 
 const fruits = ['apple', 'banana', 'orange']
 
 // Print banana
+console.log(fruits[1])
 
 // Let's turn it up a notch. I won't tell you what array methods to use. 
 
 // Join all the elements of the array into a string separated by a space.
-
+console.log(fruits.join(" "))
 // Remove orange
-
+fruits.pop('orange')
 // Add strawberry, kiwi, and grapes at the end
+fruits.push("strawberry, kiwi, and grapes")
+//as an index??
 
 // Remove apple
+fruits.pop('apple')
 
 // Add mango at the beginning of the array
+fruits.upshit('mango')
 
 // Add lemon, and grapefruit between mango and banana
+fruits.splice(1,2,'lemon', 'grapefruit')
 
 // Remove banana and strawberry
+fruits.pop('banana', 'strawberry')
 
 // Create a new array called exoticFruits. Add 3 exotic fruits inside of this array. Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
 

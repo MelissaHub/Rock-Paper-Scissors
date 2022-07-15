@@ -1,10 +1,10 @@
-function userPlay(){ 
+// function userPlay(){ 
 
-    var items = ['rock', 'paper', 'scissors'];
-    var tem = items[Math.floor(Math.random() * items.length)];
-    return tem
+//     var items = ['rock', 'paper', 'scissors'];
+//     var tem = items[Math.floor(Math.random() * items.length)];
+//     return tem
 
-}
+// }
 
 function computerPlay(){ 
 
@@ -14,25 +14,26 @@ function computerPlay(){
 
 }
 // console.log(computerplay())
+let userinput = prompt("rock, paper, scissors??")
 
 
-function playRound(playerSelection,computerSelection){ 
+function playRound(userinput,computerSelection){ 
 
     
-    if(playerSelection == 'rock' && computerSelection == 'paper'){
+    if(userinput == 'rock' && computerSelection == 'paper'){
     return "You Lose! Paper beats Rock"}
 
-        else if(playerSelection == 'paper' && computerSelection == 'rock'){
+        else if(userinput == 'paper' && computerSelection == 'rock'){
             return "You Win! Paper beats Rock"}
 
-            else if(playerSelection == 'paper' && computerSelection == 'scissors'){
+            else if(userinput == 'paper' && computerSelection == 'scissors'){
                 return "You Lose! Scissors beats Paper"} 
 
-                else if(playerSelection == 'scissors' && computerSelection == 'paper'){
+                else if(userinput == 'scissors' && computerSelection == 'paper'){
                     return "You Win! Scissors beats Paper"}   
                     
                     
-                else if(playerSelection == 'scissors' && computerSelection == 'Rock'){
+                else if(userinput == 'scissors' && computerSelection == 'Rock'){
                     return "You lose! Rock beats scissors"} 
 
                     else{
@@ -40,10 +41,10 @@ function playRound(playerSelection,computerSelection){
 
 }
 
-const playerSelection = userPlay()
+// const playerSelection = userPlay()
 const computerSelection = computerPlay()
 
-console.log(playRound(playerSelection,computerSelection))
+console.log(playRound(userinput,computerSelection))
 
 function game(){ 
 
